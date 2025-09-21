@@ -20,4 +20,7 @@ blog=[
 
 # Create your views here.
 def home_view(request):
-    return  render(request,"index.html",{"post":blog}) 
+    return  render(request,"pages/home.html",{"posts":blog}) 
+
+def about_view(request):
+    return render(request, "pages/about.html", {"posts": blog})
